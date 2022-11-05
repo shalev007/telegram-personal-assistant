@@ -7,7 +7,7 @@ WORKDIR /home/node
 
 COPY package*.json ./
 RUN npm install typescript -g
-RUN npm ci --omit=dev
+RUN npm ci
 
 COPY . .
 RUN npm run compile \
