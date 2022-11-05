@@ -6,6 +6,7 @@ ENV NODE_ENV build
 WORKDIR /home/node
 
 COPY package*.json ./
+RUN npm install typescript -g
 RUN npm ci --omit=dev
 
 COPY . .

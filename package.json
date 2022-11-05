@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@types/i18n": "^0.13.4",
-    "@types/node": "^14.18.26",
+    "@types/node": "^14.18.33",
     "gts": "^3.1.0",
     "nodemon": "^2.0.19",
     "ts-node": "^10.9.1",
