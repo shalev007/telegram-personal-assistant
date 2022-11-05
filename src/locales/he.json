@@ -1,13 +1,13 @@
 {
-	"hi": "היי",
-	"bye": "להתראות",
-	"hey there": "היי שם",
-	"do I have any tickets?": "יש לי דוחות?",
-	"checking for tickets": "בודק דוחות",
-	"you have no tickets": "אין לך דוחות",
-	"you have tickets": "יש לך דוחות",
-	"something went wrong... cannot check if you have tickets": "משהו השתבש... לא ניתן לבדוק אם יש לך דוחות",
-	"Hello %s, how are you today?": "Hello %s, how are you today?",
-	"Hello {{name}}": "Hello {{name}}",
-	"Hello from %s": "Hello from %s"
+  "hi": "היי",
+  "bye": "להתראות",
+  "hey there": "היי שם",
+  "do I have any tickets?": "יש לי דוחות?",
+  "checking for tickets": "בודק דוחות",
+  "you have no tickets": "אין לך דוחות",
+  "you have tickets": "יש לך דוחות",
+  "something went wrong... cannot check if you have tickets": "משהו השתבש... לא ניתן לבדוק אם יש לך דוחות",
+  "Hello %s, how are you today?": "Hello %s, how are you today?",
+  "Hello {{name}}": "Hello {{name}}",
+  "Hello from %s": "Hello from %s"
 }

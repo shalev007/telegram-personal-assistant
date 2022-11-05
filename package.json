@@ -9,7 +9,7 @@
     "start:dev": "nodemon -L",
     "lint": "gts lint",
     "clean": "gts clean",
-    "compile": "tsc",
+    "compile": "tsc && cp -r src/locales build/src/locales",
     "fix": "gts fix",
     "pretest": "npm run compile",
     "posttest": "npm run lint"

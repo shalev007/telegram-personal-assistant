@@ -10,7 +10,5 @@ i18n.setLocale('he');
 
 const __ = i18n.__.bind(i18n);
 const __l = i18n.__l.bind(i18n);
-// const __allTranslations = () => {
 
-// };
 export {i18n, __, __l};
