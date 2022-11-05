@@ -1,0 +1,13 @@
+{
+  "hi": "hi",
+  "bye": "bye",
+  "hey there": "hey there",
+  "do I have any tickets?": "do I have any tickets?",
+  "checking for tickets": "checking for tickets",
+  "you have no tickets": "you have no tickets",
+  "you have tickets": "you have tickets",
+  "something went wrong... cannot check if you have tickets": "something went wrong... cannot check if you have tickets",
+  "Hello %s, how are you today?": "Hello %s, how are you today?",
+  "Hello {{name}}": "Hello {{name}}",
+  "Hello from %s": "Hello from %s"
+}
