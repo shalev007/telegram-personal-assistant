@@ -1,7 +1,7 @@
 import {Telegraf} from 'telegraf';
 import * as dotenv from 'dotenv';
 import {findIfTicketsExist} from './functions';
-import {__} from './i18n';
+import {__l, __} from './i18n';
 
 dotenv.config();
 
@@ -43,9 +43,9 @@ bot.command('start', ctx => {
 
 bot.on('sticker', ctx => ctx.reply('👍'));
 
-bot.hears(__('hi'), ctx => ctx.reply(__('hey there')));
+bot.hears(__l('hi'), ctx => ctx.reply(__('hey there')));
 
-bot.hears(__('do I have any tickets?'), async ctx => {
+bot.hears(__l('do I have any tickets?'), async ctx => {
   ctx.reply(__('checking for tickets') + '...');
   findIfTicketsExist()
     .then(hasTickets => {
