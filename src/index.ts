@@ -12,6 +12,10 @@ if (!TELEGRAM_TOKEN) {
   throw new Error('TOKEN is not defined');
 }
 
+if (!serverUrl && process.env.FLY_APP_NAME) {
+  serverUrl = `http://${process.env.FLY_APP_NAME}.fly.dev`;
+}
+
 if (!serverUrl) {
   throw new Error('SERVER_URL is not defined');
 }
