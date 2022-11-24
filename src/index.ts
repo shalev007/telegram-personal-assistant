@@ -50,9 +50,16 @@ bot.hears(__l('hi'), ctx => ctx.reply(__('hey there')));
 bot.hears(__l('do I have any tickets?'), async ctx => {
   ctx.reply(__('checking for tickets') + '...');
   findIfTicketsExist()
-    .then(hasTickets => {
-      if (hasTickets) {
+    .then(tickets => {
+      if (tickets.policeRecords || tickets.kvish6Records) {
         ctx.reply(__('you have tickets') + '!');
+        if (tickets.policeRecords) {
+          ctx.reply(__('you have police tickets'));
+        }
+
+        if (tickets.kvish6Records) {
+          ctx.reply(__('you have kvish6 tickets'));
+        }
       } else {
         ctx.reply(__('you have no tickets') + '!');
       }

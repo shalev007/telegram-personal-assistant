@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-export const findIfTicketsExist = async (): Promise<boolean> => {
+export const findIfTicketsExist = async (): Promise<{
+  policeRecords: boolean;
+  kvish6Records: boolean;
+}> => {
   if (!process.env.FUNCTION_URL) {
     throw new Error('FUNCTION_URL is not defined');
   }
@@ -16,7 +19,12 @@ export const findIfTicketsExist = async (): Promise<boolean> => {
   const response = await axios.post(process.env.FUNCTION_URL, {
     id: process.env.PERSONAL_ID,
     drivers_license_id: process.env.DRIVER_LICENSE_ID,
+    car_number: process.env.CAR_NUMBER || '1385460',
   });
 
-  return response.data?.hasTickets ?? false;
+  if (!response.data) {
+    throw new Error('No response data');
+  }
+
+  return response.data;
 };

@@ -9,5 +9,7 @@
   "something went wrong... cannot check if you have tickets": "something went wrong... cannot check if you have tickets",
   "Hello %s, how are you today?": "Hello %s, how are you today?",
   "Hello {{name}}": "Hello {{name}}",
-  "Hello from %s": "Hello from %s"
+  "Hello from %s": "Hello from %s",
+  "you have police tickets": "you have police tickets",
+  "you have kvish6 tickets": "you have kvish6 tickets"
 }

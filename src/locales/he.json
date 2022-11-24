@@ -9,5 +9,7 @@
   "something went wrong... cannot check if you have tickets": "משהו השתבש... לא ניתן לבדוק אם יש לך דוחות",
   "Hello %s, how are you today?": "Hello %s, how are you today?",
   "Hello {{name}}": "Hello {{name}}",
-  "Hello from %s": "Hello from %s"
+  "Hello from %s": "Hello from %s",
+  "you have police tickets": "יש לך דוחות משטרה",
+  "you have kvish6 tickets": "יש לך דוחות בכביש 6"
 }
